@@ -1,3 +1,24 @@
+In this project, I implemented several functions related to Bayesian Networks and probabilistic inference. 
+First, I implemented the constructBayesNet function in inference.py. 
+This function constructs an empty Bayes Net structure based on a given diagram, adding variables and edges according to the specifications provided.
+
+Next, I worked on the joinFactors function in factorOperations.py as part of Question 2. 
+This function takes a list of factors and returns a new factor by multiplying the corresponding rows of the input factors. 
+It essentially serves as a product rule for factors, allowing the incorporation of probabilities for conditioned variables.
+
+Moving on to Question 3, I implemented the eliminate function in factorOperations.py. 
+This function takes a factor and a variable to eliminate, producing a new factor without that variable by summing entries that differ only in the value of the eliminated variable.
+
+In Question 4, I implemented the inferenceByVariableElimination function in inference.py. T
+his function answers a probabilistic query using variable elimination, iterating over hidden variables in elimination order and performing join and eliminate operations.
+
+For Question 5a, I filled in missing parts of the DiscreteDistribution class in inference.py. 
+Specifically, I implemented the normalize method, which normalizes distribution values to sum to one, and the sample method, which draws samples from the distribution based on proportional values.
+
+In Question 5b, I implemented the getObservationProb method in the InferenceModule base class in inference.py. 
+This method calculates the probability of a noisy distance reading given Pacman's position, the ghost's position, and the position of the ghost's jail. 
+I handled special cases, such as when the observation is None if and only if the ghost is in jail.
+
 In Question 6, I implemented the observeUpdate method in the ExactInference class, which allowed Pacman to update its belief distribution after receiving a sensor reading. 
 This involved iterating over all possible positions on the map and updating the beliefs using the getObservationProb function.
 

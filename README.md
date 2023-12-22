@@ -1,5 +1,10 @@
-In this project, I implemented several functions related to Bayesian Networks and probabilistic inference. 
-First, I implemented the constructBayesNet function in inference.py. 
+In this project, I implemented functions related to Bayesian Networks and probabilistic inference. 
+Starting with constructing a Bayes Net structure, I progressed to factor operations, variable elimination, and exact inference for Pacman's ghost tracking.
+The implementation included updating beliefs based on observations and considering time elapse. 
+The project extended to approximate inference using particle filtering, including initialization, observation updates, and time advancement. 
+The finale involved joint particle filtering for tracking multiple ghosts simultaneously. 
+
+For Question 1, I implemented the constructBayesNet function in inference.py. 
 This function constructs an empty Bayes Net structure based on a given diagram, adding variables and edges according to the specifications provided.
 
 Next, I worked on the joinFactors function in factorOperations.py as part of Question 2. 
